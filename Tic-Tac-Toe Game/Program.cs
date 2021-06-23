@@ -11,9 +11,9 @@ namespace Tic_Tac_Toe_Game
     {
         public static string[,] numbers = new string[,]
            {
-                {"1","2","3"},
-                {"4","5","6"},
-                {"7","8","9"}
+                {" "," "," "},
+                {" "," "," "},
+                {" "," "," "}
            };
         static void Main(string[] args)
         {
@@ -77,7 +77,7 @@ namespace Tic_Tac_Toe_Game
 
             if (Player1Wins().Equals(false) && Player2Wins().Equals(false))
             {
-                Console.WriteLine("Draw");
+                Console.WriteLine("\n\nDraw");
             }                                                            
 
             Console.ReadLine();
@@ -85,7 +85,7 @@ namespace Tic_Tac_Toe_Game
         public static void Display()
         {
                         
-            Console.Write("\n     |     |     \n");
+            Console.Write("     |     |     \n");
             Console.Write("  " + numbers[0, 0] + "  |");
             Console.Write("  " + numbers[0, 1] + "  |");
             Console.Write("  " + numbers[0, 2]);
