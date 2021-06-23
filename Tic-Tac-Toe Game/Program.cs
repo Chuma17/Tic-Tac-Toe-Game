@@ -78,10 +78,11 @@ namespace Tic_Tac_Toe_Game
             if (Player1Wins().Equals(false) && Player2Wins().Equals(false))
             {
                 Console.WriteLine("\n\nDraw");
-            }                                                            
-
+            }
+            
             Console.ReadLine();
-        }
+        }       
+        
         public static void Display()
         {
                         
